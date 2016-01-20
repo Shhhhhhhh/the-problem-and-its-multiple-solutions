@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>horizontal-center</title>
+    <style>
+
+
+
+    .box{
+    float:left;
+    position:relative;
+    left:50%;
+}
+p{
+    float:left;
+    position:relative;
+    right:50%;
+}
+    
+     .main-container {
+      float: left;
+      position: relative;
+      left: 50%;
+    }
+    .fixer-container {
+      float: left;
+      position: relative;
+      left: -50%;
+    }
+    </style>
+</head>
+
+<body>
+<!--不定宽的浮动元素 https://segmentfault.com/a/1190000003746646-->
+    <div class="box">
+    <p>我是浮动的</p>
+    <p>我也是居中的</p>
+</div>
+
+<br><br>
+<!--http://stackoverflow.com/questions/4767971/how-do-i-center-float-elements-->
+<div class="main-container">
+  <div class="fixer-container">
+    <ul class="list-of-floating-elements">
+
+      <li class="floated">Floated element</li>
+      <li class="floated">Floated element</li>
+      <li class="floated">Floated element</li>
+
+    </ul>
+  </div>
+</div>
+</body>
+
+</html>
